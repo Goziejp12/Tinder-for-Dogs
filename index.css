@@ -25,3 +25,12 @@ header img {
     align-self: center;
     width: 20%;
 }
+
+.avatar {
+    max-width: 765px;
+    width: 98%;
+    height: 75%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}

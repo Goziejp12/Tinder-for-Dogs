@@ -4,6 +4,13 @@ class Dog {
     constructor(data) {
         Object.assign(this, data)
     }
+    getAvatarHtml(){
+        return `
+                <img src="${this.avatar}" alt="avatar" class="avatar">
+                `
+    }
 }
 
-console.log(new Dog(dogs))
+export {Dog}
+
+
