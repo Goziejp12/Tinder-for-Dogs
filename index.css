@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F6F7FB 100%);
 }
 
 header {
@@ -10,7 +12,7 @@ header {
 }
 
 header img {
-    width: 10%;
+    width: 6%;
 }
 
 .icon-profile {
@@ -23,7 +25,7 @@ header img {
 
 .dog-foot-logo {
     align-self: center;
-    width: 20%;
+    width: 15%;
 }
 
 .avatar {
@@ -34,3 +36,23 @@ header img {
     margin: 0 auto;
     border-radius: 10px;
 }
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1.3em 0;
+    gap: 1em;
+}
+
+footer img {
+    background: #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 0px 10px 20px #E9E9EA;
+    padding: 1em;
+}
+
+
+
+
+
