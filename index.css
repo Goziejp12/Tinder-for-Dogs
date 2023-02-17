@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 1em;
+}
+
+header img {
+    width: 10%;
+}
+
+.icon-profile {
+    margin-right: auto;
+}
+
+.icon-chat {
+    margin-left: auto;
+}
+
+.dog-foot-logo {
+    align-self: center;
+    width: 20%;
+}
