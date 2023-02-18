@@ -14,11 +14,18 @@ function render() {
 
 document.addEventListener('click', function(e) {
     if (e.target.id === 'icon-cross') {
-        dogsMatch = getNewMatch()
-        render()
+        this.hasBeenLiked = false
+        this.hasBeenSwiped = true
+        document.querySelector('.nope-badge').style.display = 'inline-block'
+        setTimeout(() => {
+            dogsMatch = getNewMatch()
+            render()
+        }, 1000)
     }
     else if (e.target.id === 'icon-heart') {
-        
+        this.hasBeenLiked = true
+        this.hasBeenSwiped = false
+        document.querySelector('.like-badge').style.display = 'inline-block'
     }
 })
  render()
