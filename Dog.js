@@ -6,7 +6,9 @@ class Dog {
     }
     getAvatarHtml(){
         return `
-                <img src="${this.avatar}" alt="avatar" class="avatar">
+            <div class="avatar" style="background-image:url('${this.avatar}')">
+                <p><strong>${this.name}, ${this.age}</strong><br>${this.bio}</p>
+            </div>
                 `
     }
 }
