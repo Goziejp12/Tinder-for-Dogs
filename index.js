@@ -12,20 +12,27 @@ function render() {
     document.querySelector('.match-display').innerHTML = dogsMatch.getAvatarHtml()
 }
 
-document.addEventListener('click', function(e) {
+document.addEventListener('click', e => {
     if (e.target.id === 'icon-cross') {
-        this.hasBeenLiked = false
-        this.hasBeenSwiped = true
         document.querySelector('.nope-badge').style.display = 'inline-block'
+        document.querySelector('.like-badge').style.display = 'none'
         setTimeout(() => {
             dogsMatch = getNewMatch()
             render()
-        }, 1000)
+        }, 500)
     }
     else if (e.target.id === 'icon-heart') {
-        this.hasBeenLiked = true
-        this.hasBeenSwiped = false
         document.querySelector('.like-badge').style.display = 'inline-block'
+        document.querySelector('.nope-badge').style.display = 'none'
+        setTimeout(() => {
+            dogsMatch = getNewMatch()
+            render()
+        }, 500)
     }
+})
+
+document.addEventListener('swiped', () => {
+    dogsMatch = getNewMatch()
+    render()
 })
  render()
