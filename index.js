@@ -31,7 +31,7 @@ document.addEventListener('click', e => {
     }
 })
 
-document.addEventListener('click', e => {
+document.addEventListener('swiped', e => {
     if (e.target.id === 'avatar') {
         dogsMatch = getNewMatch()
         render()
