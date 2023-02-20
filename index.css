@@ -33,7 +33,7 @@ header img {
     max-width: 765px;
     background-size: cover;
     width: 98%;
-    height: 85%;
+    height: 80%;
     display: block;
     margin: 0 auto;
     border-radius: 10px;
@@ -41,7 +41,7 @@ header img {
 
 p {
     position: absolute;
-    bottom: 20;
+    bottom: 65;
     margin-left: 0.7em;
     font-size: 1.5rem;
     line-height: 1.5;
