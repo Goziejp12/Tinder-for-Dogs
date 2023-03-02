@@ -63,6 +63,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     margin: 1em 0;
+    background-color: red;
     gap: 1em;
 }
 
